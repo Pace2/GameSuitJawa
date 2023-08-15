@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Suit Jawa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <h1 style="text-align: center; margin-bottom: 30px;">SUIT TRADISIONAL JAWA</h1>
+        <div class="scores">
+            <p>Komputer : <span id="computer_score">0</span></p>
+            <p>Anda : <span id="user_score">0</span></p>
+        </div>
+        <div class="choices">
+            <button onclick="checker('gajah')"><img src="gajah-removebg-preview.png" alt="Gajah"></button>
+            <button onclick="checker('orang')"><img src="manusia-removebg-preview.png" alt="Orang"></button>
+            <button onclick="checker('semut')"><img src="semut-removebg-preview.png" alt="Semut"></button>
+        </div>
+        <div class="results">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#ff5500" fill-opacity="1" d="M0,192L0,224L1440,224L1440,0L0,0L0,0Z"></path></svg>
+   
+    <audio id="backsound" src="HARI MERDEKA Instrumental Lirik Lagu Wajib Nasional. Nada Siswa 5 SD. VJ Raja Oloan Music Arr.mp3" preload="auto" loop="true" style="display:none"></audio>
+    <audio id="start_sound" src="start_sound.mp3" preload="auto" style="display:none"></audio>
+    <audio id="suit_sound" src="Quack Sound Effect.mp3" preload="auto" style="display:none"></audio>
+    <audio id="win_sound" src="Correct sound effect 正確音效.mp3" preload="auto" style="display:none"></audio>
+    <audio id="lose_sound" src="Incorrect Sound Effect.mp3" preload="auto" style="display:none"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
